@@ -1,0 +1,11 @@
+[
+  {
+    "token": "<valid_token>"
+  },
+  {
+    "token": ""
+  },
+  {
+    "token": "<invalid_token>"
+  }
+]

@@ -1,0 +1,25 @@
+JIRA-9165: Cadastro de Proprietário
+
+ID	Condição	Resultado Esperado	Camada
+1	Validar obrigatoriedade dos campos de cadastro	O sistema deve impedir o envio do formulário quando campos obrigatórios (nome, e-mail, senha) não forem preenchidos	API
+2	Validar formato e regras da senha	O sistema deve impedir o cadastro de senhas que não atendam aos critérios (mín. 8 caracteres, 1 maiúscula, 1 minúscula, 1 número)	API
+3	Confirmar retorno de mensagens adequadas	O sistema deve exibir mensagem de sucesso quando o cadastro for concluído e mensagem de erro quando falhar	API
+4	Validar unicidade do e-mail	O sistema deve rejeitar cadastros com e-mails já existentes e exibir mensagem apropriada	API
+
+JIRA-9167: Login
+
+ID	Condição	Resultado Esperado	Camada
+
+1	Validar credenciais de acesso	O sistema deve autenticar apenas e-mails e senhas válidos cadastrados	API
+2	Gerar token de autenticação (JWT) após login bem-sucedido	O sistema deve criar e retornar token JWT válido para o usuário autenticado	API
+			
+
+JIRA-9170: Listagem de Apartamento Disponível
+
+ID	Condição	Resultado Esperado	Camada
+1	Validar autenticação para acesso à listagem	O sistema deve permitir acesso à listagem somente para usuários autenticados	API
+2	Validar exibição das informações básicas dos apartamentos	O sistema deve apresentar corretamente nome, descrição, localização e valor da diária de cada apartamento	API
+3	Validar comportamento quando não houver apartamentos disponíveis	O sistema deve exibir mensagem informando que não há apartamentos disponíveis	API
+4	
+Validar retorno dos dados de listagem
+	O sistema deve retornar dados corretos e atualizados dos apartamentos disponíveis	API

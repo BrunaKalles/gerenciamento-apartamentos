@@ -1,0 +1,35 @@
+{
+  "name": "gerenciamento-apartamentos",
+  "version": "1.0.0",
+  "description": "1) Funcionalidade: Cadastro de Proprietário",
+  "main": "index.js",
+  "scripts": {
+  "test": "mocha test/**/*.test.js --timeout 10000",
+  "test:report": "mocha test/**/*.test.js --timeout 10000 --reporter mochawesome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunaKalles/gerenciamento-apartamentos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrunaKalles/gerenciamento-apartamentos/issues"
+  },
+  "homepage": "https://github.com/BrunaKalles/gerenciamento-apartamentos#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "chai": "^6.2.0",
+    "dotenv": "^17.2.3",
+    "mocha": "^11.7.5",
+    "mochawesome": "^7.1.4",
+    "supertest": "^7.1.4"
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "nome": "Bruna Kalles",
+    "email": "bruna.kalles@example.com",
+    "senha": "Senha123"
+  },
+  {
+    "nome": "",
+    "email": "bruna.kalles@example.com",
+    "senha": "Senha123"
+  },
+  {
+    "nome": "Bruna Kalles",
+    "email": "bruna.kalles@example.com",
+    "senha": "senha"
+  },
+  {
+    "nome": "Bruna Kalles",
+    "email": "bruna.kalles@example.com",
+    "senha": "Senha123"
+  }
+]
