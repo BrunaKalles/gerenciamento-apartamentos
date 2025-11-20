@@ -29,7 +29,8 @@ jobs:
       - name: Wait for API to be ready
         run: |
           sleep 10
-          # Se quiser algo mais robusto, pode usar curl para checar o endpoint de saúde
+          # Para aguardar o endpoint, pode usar:
+          # until curl --output /dev/null --silent --head --fail http://localhost:3000; do sleep 2; done
 
       - name: Run tests
         run: npm test
