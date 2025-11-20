@@ -1,0 +1,34 @@
+name: API Functional Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Start API
+        run: npm run &
+
+      - name: Wait for API to be ready
+        run: |
+          sleep 10
+          # Se quiser algo mais robusto, pode usar curl para checar o endpoint de saúde
+
+      - name: Run tests
+        run: npm test
