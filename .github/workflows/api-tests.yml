@@ -24,6 +24,7 @@ jobs:
 
       - name: Start API
         run: npm start &
+             sleep 10
 
       - name: Wait for API to be ready
         run: |
