@@ -4,6 +4,7 @@
   "description": "1) Funcionalidade: Cadastro de Proprietário",
   "main": "index.js",
   "scripts": {
+  "start": "node index.js",
   "test": "mocha test/**/*.test.js --timeout 10000",
   "test:report": "mocha test/**/*.test.js --timeout 10000 --reporter mochawesome"
   },
