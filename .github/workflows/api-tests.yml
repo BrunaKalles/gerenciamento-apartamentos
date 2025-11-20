@@ -23,7 +23,8 @@ jobs:
         run: npm install
 
       - name: Start API
-        run: npm run &
+        run: npm start &
+             sleep 10
 
       - name: Wait for API to be ready
         run: |
